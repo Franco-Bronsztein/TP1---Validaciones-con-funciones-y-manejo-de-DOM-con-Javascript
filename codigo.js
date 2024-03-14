@@ -102,6 +102,21 @@ function CalcularPromedio()
 
 function MayorNota()
 {
+      let materiaMasAlta
+    if(notaMateInput.value > 10 || notaMateInput.value < 0)
+    {
+        alert("Ingrese una nota valida en Matematica");
+    }
+    if(notaLenguainput.value > 10 || notaLenguainput.value < 0)
+    {
+        alert("Ingrese una nota valida en Lengua");
+    }
+    if(notaEfsiinput.value > 10 || notaEfsiinput.value < 0)
+    {
+        alert("Ingrese una nota valida en EFSI");
+    }
+
+    
     let materiaMasAlta
     if(notaMateInput.value > notaLenguainput && notaMateInput.value > notaEfsiinput.value)
     {
