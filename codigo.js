@@ -69,7 +69,7 @@ function ValidarInfoEfsi()
     }
 }
 
-
+let promedioFueraDeFuncion;
 function CalcularPromedio()
 {
     if(notaMateInput.value > 10 || notaMateInput.value < 0)
@@ -97,8 +97,10 @@ function CalcularPromedio()
     {
         h1Mostrar.style.color = "red";
     }
-}
+    promedioFueraDeFuncion = promedio;
 
+    mostrarIMG();
+}
 
 function MayorNota()
 {
@@ -148,4 +150,18 @@ function MayorNota()
 
     h1Mostrar.innerText = materiaMasAlta
     h1Mostrar.style.color = "blue"
+}
+
+
+function mostrarIMG()
+{
+    let imagenSRC = document.getElementById("img-src")
+    if(promedioFueraDeFuncion >= 6 && promedioFueraDeFuncion <= 10)
+    {
+        imagenSRC.setAttribute("src","./img/img1.AVIF" ) 
+    }
+    else
+    {
+        imagenSRC.setAttribute("src", "./img/img2.JPG")
+    }
 }
