@@ -102,7 +102,6 @@ function CalcularPromedio()
 
 function MayorNota()
 {
-      let materiaMasAlta
     if(notaMateInput.value > 10 || notaMateInput.value < 0)
     {
         alert("Ingrese una nota valida en Matematica");
